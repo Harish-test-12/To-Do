@@ -32,8 +32,8 @@ jobs:
           file: ./Dockerfile  # Path to Dockerfile
           push: true          # Set to 'false' if you don't want to push
           tags: |
-            harish7303/To-Do:latest  # Replace with your Docker Hub username and repo name
-            harish7303/To-Do:${{ github.sha }}  # Tag the image with the Git SHA
+            harish7303/to-do:latest  # Use lowercase for both username and repo name
+            harish7303/to-do:${{ github.sha }}  # Tag the image with the Git SHA
 
       - name: Verify the built image
         run: docker images  # Lists all images to verify the built image
