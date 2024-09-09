@@ -32,7 +32,7 @@ jobs:
           file: ./Dockerfile  # Path to Dockerfile
           push: true          # Set to 'false' if you don't want to push
           tags: |
-            harish7303/To-Do:latest  # Replace with your Docker Hub harish7303 and repo name
+            harish7303/To-Do:latest  # Replace with your Docker Hub username and repo name
             harish7303/To-Do:${{ github.sha }}  # Tag the image with the Git SHA
 
       - name: Verify the built image
